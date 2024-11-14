@@ -1,3 +1,4 @@
+<?php
 // Подключение файла соединения с БД
 include_once 'db.class.php';
 
@@ -5,15 +6,16 @@ include_once 'db.class.php';
 define('db_host','localhost');
 
 // Имя БД
-define('db_name','name');
+define('db_name','TsygankovDS');
 
 // Пользователь БД
-define('db_user','root');
+define('db_user','admin');
 
 // Пароль БД
-define('db_pass','password');
+define('db_pass','admin_password');
 
 // Обявление класса для подключения к бд
 $db = new DB_class(db_host,db_name,db_user,db_pass);
 
-$query = $db->select(true,"*","TsygankovDS","task_id='1'");
+//$query = $db->select(true,"*","TsygankovDS","task_id='1'");
+?>
