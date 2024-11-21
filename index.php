@@ -15,7 +15,7 @@ define('db_user','admin');
 define('db_pass','admin_password');
 
 // Обявление класса для подключения к бд
-//$db = new DB_class(db_host,db_name,db_user,db_pass);
+$db = new DB_class(db_host,db_name,db_user,db_pass);
 
 //$query = $db->select(true,"*","TsygankovDS","task_id='1'");
 ?>
